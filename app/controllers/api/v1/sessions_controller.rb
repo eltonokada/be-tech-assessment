@@ -7,6 +7,7 @@ module Api
         if @session.save
           render json: { session: @session }, status: :created
         else
+          Rails.logger.error(@session.errors)
           render json: { errors: @session.errors }, status: :unprocessable_entity
         end
       end

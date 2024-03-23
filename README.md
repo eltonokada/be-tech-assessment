@@ -54,7 +54,7 @@ To run the `db:seed` task, use the following command in your terminal:
 
 ```bash
 rails db:seed
-```bash
+```
 
 ## Testing
 This project utilizes RSpec for testing. Execute the tests by running the `rspec` command.

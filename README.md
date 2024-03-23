@@ -74,7 +74,7 @@ rails db:seed
 This project utilizes RSpec for testing. Execute the tests by running the `rspec` command.
 
 ## Challenges
-The primary challenge encountered during this project was crafting an accurate query to handle instances of overlapping sessions.
+The main challenge in this project was developing a precise query to manage overlapping sessions. To address this, I implemented a custom validator, `OverlappingSessionsValidator`, which contains a query specifically designed to handle such scenarios. You can find this validator in `app/validators/overlapping_sessions_validator.rb`.
 
 ## Potential Improvements
 - **Race Condition Management**: Consider the use of Mutex to prevent scenarios where a new session is created during an overlapping time, post-validation.

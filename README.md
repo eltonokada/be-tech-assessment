@@ -46,6 +46,14 @@ Clone the repository.
 Run bundle install to install the dependencies.
 Run rails db:migrate to set up the database.
 Run rails server to start the development server.
+We have Client and Coach models, so to proper testing, we need to have valid coaches and clients in database, so for testing purposes, please run first the `db:seed` task.
+The `db:seed` task is used to populate the database with initial data for `Client` and `Coach` models. 
+This task generates records with unique `client_hash_id` and `coach_hash_id` values, which are used as foreign keys in the `Session` model.
+
+To run the `db:seed` task, use the following command in your terminal:
+
+```bash
+rails db:seed
 
 ## Testing
 This project utilizes RSpec for testing. Execute the tests by running the `rspec` command.

@@ -80,3 +80,4 @@ The main challenge in this project was developing a precise query to manage over
 - **Race Condition Management**: Consider the use of Mutex to prevent scenarios where a new session is created during an overlapping time, post-validation.
 - **API Authentication/Authorization**: Implementation of JWT (JSON Web Tokens) or simple token authentication could enhance the security of the API.
 - **Scalability**: Asynchronous processing could be employed for improved scalability. Additionally, key storage could be managed with Kafka or Redis.
+- **Error Handling**: Implement custom errors, handling the exceptions

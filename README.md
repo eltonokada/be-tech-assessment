@@ -6,6 +6,15 @@ AceUp Session Scheduler is a web service designed to empower coaches and their c
 
 The service uses three tables: `sessions`, `coaches`, and `clients`.
 
+The `sessions` table has the following structure:
+
+- `coach_hash_id`: A foreign key referencing the unique identifier of the coach.
+- `client_hash_id`: A foreign key referencing the unique identifier of the client.
+- `start`: The start time of the session.
+- `duration`: The duration of the session, in minutes.
+- `created_at`: The timestamp when the session was created.
+- `updated_at`: The timestamp when the session was last updated.
+
 The `coaches` table has the following structure:
 
 - `coach_hash_id`: A unique identifier for each coach.
@@ -17,15 +26,6 @@ The `clients` table has the following structure:
 - `client_hash_id`: A unique identifier for each client.
 - `created_at`: The timestamp when the client was created.
 - `updated_at`: The timestamp when the client was last updated.
-
-The `sessions` table has the following structure:
-
-- `coach_hash_id`: A foreign key referencing the unique identifier of the coach.
-- `client_hash_id`: A foreign key referencing the unique identifier of the client.
-- `start`: The start time of the session.
-- `duration`: The duration of the session, in minutes.
-- `created_at`: The timestamp when the session was created.
-- `updated_at`: The timestamp when the session was last updated.
 
 ## Usage
 

@@ -81,3 +81,4 @@ The main challenge in this project was developing a precise query to manage over
 - **API Authentication/Authorization**: Implementation of JWT (JSON Web Tokens) or simple token authentication could enhance the security of the API.
 - **Scalability**: Asynchronous processing could be employed for improved scalability. Additionally, key storage could be managed with Kafka or Redis.
 - **Error Handling**: Implement custom errors, handling the exceptions
+- **Database**: Add constraints for FK, and create a PK in sessions composed by coach_hash_id and start
